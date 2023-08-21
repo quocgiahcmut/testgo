@@ -1,0 +1,25 @@
+###
+# @name ping
+
+GET http://localhost:8080/ping
+
+###
+# @name CreatePerson
+
+POST http://localhost:8080/person
+Content-Type: application/json
+
+{
+  "name": "quocgia",
+  "age": 24,
+  "bio": "software develop"
+}
+
+###
+# @name GetListPeople
+
+GET http://localhost:8080/person?page=3&per_page=3
+
+###
+
+GET http://localhost:8080/person
